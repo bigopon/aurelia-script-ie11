@@ -1,0 +1,8 @@
+<template>
+  <require from="./hello-world/hello-world"></require>
+  <input value.bind="message">
+  <div>
+    ${message}
+    <hello-world message.bind=message style="display: block; border: 1px solid red;"></hello-world>
+  </div>
+</template>

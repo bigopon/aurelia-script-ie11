@@ -1,0 +1,20 @@
+<head>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=Promise"></script>
+  <script src='https://unpkg.com/aurelia-script@1.5.2/dist/aurelia_no_loader.es5.umd.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+  <script src="loader-default.js"></script>
+  <script>
+    require.config({
+      // baseUrl: '', // this depends on the http server this app is running on
+      paths: {
+        'text': 'https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text.min' // note that there's no .js in the end, requirejs auto append it
+      },
+      // ...
+    });
+  </script>
+</head>
+
+<body>
+
+  <script src="./index.js"></script>
+</body>
