@@ -4,6 +4,6 @@ define(function() {
   }
 
   return {
-    App
+    App: App
   }
 });
